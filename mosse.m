@@ -1,5 +1,5 @@
 %data_path should include 'img'(including all the frames in a certain sequence) and roundtruth_rect.txt
-data_path = '.\Tiger2';
+data_path = '.\Basketball';
 
 %sequence_path, namely 'img', should include all the frames of a certain sequence
 [gt,sequence_path,img_files]=Load_image(data_path);
@@ -8,7 +8,7 @@ data_path = '.\Tiger2';
 img = imread([sequence_path img_files{1}]);
 
 %assign the first frame's ground truth
-ground_truth = [32 60 68 78];
+ground_truth = [198 214 34 81];
 endFrame=length(img_files);
 
 %turn rgb to gray
